@@ -18,7 +18,7 @@ const meeting=(element)=>{
         sharedLinks: [
           {
             name: 'Personal link',
-            url:`https://localhost:5173/room/${id}`
+            url:`https://joinora.netlify.app/room/${id}`
           },
         ],
          scenario: {
