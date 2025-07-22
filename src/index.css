@@ -6,7 +6,7 @@
 body{
   background-color: #fcf5f5;
 }
-.body::-webkit-scrollbar{
+body::-webkit-scrollbar{
   display: none;
 }
 .footer{
