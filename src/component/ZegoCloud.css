@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Merriweather:ital,opsz,wght@1,18..144,900&family=Special+Gothic+Expanded+One&display=swap');
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 20px;
+  width: fit-content;
+}
+
+.header img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.app_name {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-shadow: 2px 0 rgb(0, 162, 255);
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* margin-top: 90px; */
+    min-height: 50vh;
+    
+}
+.body h1 {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+   font-weight: 900;
+  font-style: italic;
+ animation: blueHeartbeat 1.8s infinite ease-in-out;
+ margin-bottom: 20px;
+ padding: 10px;
+ max-width: 80%;
+ 
+
+}
+@keyframes blueHeartbeat {
+  0% {
+    text-shadow: 0 0 55px #1316d0;
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    text-shadow: 0 0 20px #1286f9, 0 0 30px #00b7ff;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    text-shadow: 0 0 75px #00b7ff;
+    transform: scale(1.3);
+    opacity: 1;
+  }
+
+}
+.body p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgb(54, 54, 54);
+    padding: 5px;
+}
+
+.body input {
+  margin: 10px;
+  margin-top: 15px;
+  padding: 10px 35px;
+  font-size: 1rem;
+  border: 2px solid #00b7ff;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: 0.3s ease-in-out;
+}
+.body input:focus {
+  box-shadow: 0 0 10px #00b7ff;
+  border-color: #00cfff;
+  background-color: #ffffff;
+  transform: scaleX(1.1);
+}
+.body button{
+    background-color: #0033ff;
+    padding: 8px 10px;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+.body button:hover {
+  text-shadow: 0px 0px 20px #00b7ff;
+  box-shadow: 0 0 20px #00b7ff, 0 0 40px #00b7ff;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.body img{
+    width:15%;
+    border-radius: 50;
+}
+/* Tablets & small laptops */
+@media (max-width: 1024px) {
+  .body input {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
+
+  .body h1 {
+    font-size: 1.7rem;
+  }
+
+  .body p {
+    font-size: 1.4rem;
+  }
+
+  .body img {
+    width: 25%;
+  }
+
+  .app_name {
+    font-size: 1.2rem;
+  }
+}
+
+/* iPads & landscape phones */
+@media (max-width: 768px) {
+  .body input {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .body h1 {
+    font-size: 1.7rem;
+    
+    
+  }
+
+  .body p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .body img {
+    width: 35%;
+  }
+
+  .app_name {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px auto;
+  }
+
+  .body {
+    padding: 10px;
+  }
+
+  .body h1 {
+    font-size: 0.9rem;
+    text-align: center;
+    
+  }
+
+  .body p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .body input {
+    width: 80%;
+    padding: 10px;
+    font-size: 0.5rem;
+  }
+
+  .body button {
+    width: 60%;
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .body img {
+    width: 50%;
+  }
+
+  .app_name {
+    font-size: 1rem;
+  }
+}
