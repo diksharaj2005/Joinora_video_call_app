@@ -6,6 +6,9 @@
 body{
   background-color: #fcf5f5;
 }
+.body::-webkit-scrollbar{
+  display: none;
+}
 .footer{
      text-align: center;
     padding: 20px;
