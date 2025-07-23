@@ -8,7 +8,7 @@ const VideoRoom = () => {
 const meeting=(element)=>{
      const appID =1671517269 ;
       const serverSecret = "984ec4eda1581ba50f1e246d41cd30d6";
-      const kitToken =  ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, id ,  Date.now().toString(),  "diksha");
+      const kitToken =  ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, id ,  Date.now().toString(),  " ");
 
          // Create instance object from Kit Token.
       const zp = ZegoUIKitPrebuilt.create(kitToken);
