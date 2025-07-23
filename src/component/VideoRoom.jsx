@@ -30,7 +30,14 @@ const meeting=(element)=>{
 
   return (
     <>
- <div ref={meeting}/>
+ <div ref={meeting}
+      style={{
+        width: '100%',
+        height: '90vh',
+        margin: 'auto',
+        border: '2px solid #ccc',
+        borderRadius: '12px',
+        overflow: 'hidden',}}/>
     </>
   )
 }
